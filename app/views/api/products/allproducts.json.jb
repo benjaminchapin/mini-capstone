@@ -3,7 +3,7 @@
   id: product.id,
   name: product.name,
   description: product.description,
-  price: price 
+  price: product.price, 
   image: product.image_url
 }
 end
