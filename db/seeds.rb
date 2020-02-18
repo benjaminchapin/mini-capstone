@@ -42,42 +42,63 @@
 #   phone_number: "246-235-9623")
 # supplier.save
 
-Image.create([
-  {
-    url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_01_2000x.jpg?v=1529554240",
-    product_id: 1
-  }, {
-    url: "https://i.ebayimg.com/images/g/hUIAAOSwBLlVON5b/s-l300.jpg",
-    product_id: 2
-  }, {
-    url: "https://cdn.shopify.com/s/files/1/1440/9434/products/jugg-4_600x600.jpg?v=1556599758",
-    product_id: 3
-  },{
-    url: "https://cdn.shopify.com/s/files/1/1440/9434/products/jugg-4_600x600.jpg?v=1556599758",
-    product_id: 3
-  },{
-    url: "https://www.rebelparty.com/wp-content/uploads/2017/08/GREEN-ASTROTURF.jpg",
-    product_id: 4
-  },{
-    url: "https://alc-live.storage.googleapis.com/upload/img_cache/file-1445-cd6c870cd5103c5ce4065fcf94303f14.jpg",
-    product_id: 4
-  },{
-    url: "https://i.ebayimg.com/images/g/iiMAAOSwnBpdH7C-/s-l400.jpg",
-    product_id: 3
-  },{
-    url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_jasonpic01_2000x.jpg?v=1529554240",
-    product_id: 1
-  },{
-    url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_02_2000x.jpg?v=1529554240",
-    product_id: 1
-  },{
-    url: "https://images-na.ssl-images-amazon.com/images/I/91WRb6FKe8L._AC_SL1500_.jpg",
-    product_id: 2
-  },{
-    url: "https://screeninvasion.com/wp-content/uploads/2013/11/Towelie-Towel.jpg",
-    product_id: 2
-  },{
-    url: "https://s3.amazonaws.com/blogs.comedycentral.com-production/wp-content/uploads/sites/58/2014/04/SP_TOWELIE_TowelSale.jpg",
-    product_id: 2
-  },
-])
+# Image.create([
+#   {
+#     url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_01_2000x.jpg?v=1529554240",
+#     product_id: 1
+#   }, {
+#     url: "https://i.ebayimg.com/images/g/hUIAAOSwBLlVON5b/s-l300.jpg",
+#     product_id: 2
+#   }, {
+#     url: "https://cdn.shopify.com/s/files/1/1440/9434/products/jugg-4_600x600.jpg?v=1556599758",
+#     product_id: 3
+#   },{
+#     url: "https://cdn.shopify.com/s/files/1/1440/9434/products/jugg-4_600x600.jpg?v=1556599758",
+#     product_id: 3
+#   },{
+#     url: "https://www.rebelparty.com/wp-content/uploads/2017/08/GREEN-ASTROTURF.jpg",
+#     product_id: 4
+#   },{
+#     url: "https://alc-live.storage.googleapis.com/upload/img_cache/file-1445-cd6c870cd5103c5ce4065fcf94303f14.jpg",
+#     product_id: 4
+#   },{
+#     url: "https://i.ebayimg.com/images/g/iiMAAOSwnBpdH7C-/s-l400.jpg",
+#     product_id: 3
+#   },{
+#     url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_jasonpic01_2000x.jpg?v=1529554240",
+#     product_id: 1
+#   },{
+#     url: "https://cdn.shopify.com/s/files/1/0918/8376/products/gpk_adambuttonup2_02_2000x.jpg?v=1529554240",
+#     product_id: 1
+#   },{
+#     url: "https://images-na.ssl-images-amazon.com/images/I/91WRb6FKe8L._AC_SL1500_.jpg",
+#     product_id: 2
+#   },{
+#     url: "https://screeninvasion.com/wp-content/uploads/2013/11/Towelie-Towel.jpg",
+#     product_id: 2
+#   },{
+#     url: "https://s3.amazonaws.com/blogs.comedycentral.com-production/wp-content/uploads/sites/58/2014/04/SP_TOWELIE_TowelSale.jpg",
+#     product_id: 2
+#   },
+# ])
+
+# supplier = Supplier.new(
+#   name: "Hasbro",
+#   email: "supply@hasbro.com",
+#   phone_number: "745-346-2346"
+#   )
+# supplier.save
+
+
+# category = Category.new(
+#   name: "Weaponry"
+#   )
+# category.save
+
+# product = Product.new(
+#   name: "Gopherchucks",
+#   price: 80,
+#   description: "nunchucks made from gophers",
+#   image_url: "https://live.staticflickr.com/2268/1992861119_59757e6b0b_z.jpg"
+#   )
+# product.save

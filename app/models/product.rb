@@ -1,10 +1,15 @@
 class Product < ApplicationRecord
+
+  belongs_to :supplier
+  has_many :carted_products
+  has_many :orders, through: :carted_products
+  has_many :product_categories
+  has_many :categories, through: :product_categories
+  has_many :images
+
   validates :name, presence: true
-
   validates :name, uniqueness: true
-
   validates :description, length: { in: 10..500 }
-
   validates :price, numericality: { greater_than: 0 }
 
   #model method
@@ -20,9 +25,9 @@ class Product < ApplicationRecord
     price + tax
   end
 
-  belongs_to :supplier #association method
-
-  has_many :images
+  def category_ids
+    categories.map { |category| category.name}
+  end
 
   # def supplier
   #   Supplier.find_by(id: supplier_)

@@ -1,0 +1,12 @@
+<div class="card-columns">
+
+  <% @products.each do |product| %>
+   <div class="card bg-success">
+      <div class="card-body">
+        <h2 class="card-title"> <%= product.name %></h2>
+        <p class="card-text"> Description: <%= product.description %> <br> Price: <%= product.price %> <br> Supplier Name: <%= product.supplier.name %> </p>
+        <a href="/products/<%= product.id %>" type="button" class="btn btn-outline-success bg-danger btn-sm">More Info</a>
+      </div>
+    </div>
+  <% end %>
+</div>

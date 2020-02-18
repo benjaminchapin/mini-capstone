@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+ Rails.application.routes.draw do
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
@@ -6,6 +6,14 @@ Rails.application.routes.draw do
   # namespace :api do
   #   get "/photos" => "photos#index"
   # end
+
+  get "/products" => "products#index"
+  get "/products/new" => "products#new"
+  get "/products/:id" => "products#show"
+  post "/products" => "products#create"
+  get "/products/:id/edit" => "products#edit"
+  patch "/products/:id" => "products#update"
+  delete "/products/:id/" => "products#destroy"
 
   namespace :api do
     # get "/product2_url" => "products#product2_action"
@@ -18,7 +26,14 @@ Rails.application.routes.draw do
     post "/products" => "products#create"
     patch "/products/:id" => "products#update"
     delete "/products/:id" => "products#destroy"
+
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
+
+    post "/orders" => "orders#create"
+    get "/orders" => "orders#index"
+    get "/orders/:id" => "orders#show"
+
+    post "/carted_products" => "carted_products#create"
   end
 end

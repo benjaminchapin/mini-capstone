@@ -1,0 +1,10 @@
+<h2>Name: <%= @product.name %></h2>
+<h3>Price: <%= @product.price %></h3>
+<h4>Description: <%= @product.description %></h4>
+<h5>Supplier: <%= @product.supplier.name %></h5>
+<h6>Images: <%= @product.images %></h6>
+
+<br>
+
+<a href="/products/<%= @product.id %>/edit">Edit</a>
+<a href="/products/<%= @product.id %>" data-method="delete">Delete</a>
